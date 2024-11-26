@@ -8,7 +8,7 @@ const nextConfig = {
         name: "guest",
         filename: "static/chunks/guestRemoteEntry.js",
         exposes: {
-          "./GuestHomePage": "./src/pages/index"
+          "./GuestHomePage": "./src/pages/index",
         },
         shared: {},
         extraOptions: {},

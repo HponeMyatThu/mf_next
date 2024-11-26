@@ -23,7 +23,7 @@ const RemoteAuthUserHome = dynamic<AuthUserHomePageProps>(
 export default function Home() {
   return (
     <>
-      <div>Hello from host (8000)</div>
+      <div className="text-6xl">Hello from host (8000)</div>
       <RemoteGuestHome />
       <RemoteAuthUserHome />
     </>
