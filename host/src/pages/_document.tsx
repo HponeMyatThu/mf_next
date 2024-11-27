@@ -8,6 +8,7 @@ export default function Document() {
         <Main />
         <NextScript />
       </body>
+      <script src="https://cdn.tailwindcss.com"></script>
     </Html>
   );
 }

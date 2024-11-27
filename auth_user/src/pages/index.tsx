@@ -1,5 +1,5 @@
 export default function Home() {
   return (
-    <div>Hello from auth_user (8002)</div>
+    <div className={`text-4xl`}>Hello from auth_user (8002)</div>
   );
 }
