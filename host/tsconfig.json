@@ -17,6 +17,15 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "next.config.mjs"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "next.config.mjs",
+    "src/config/validateEnv.js",
+    "src/config/envConfig.js",
+    "src/config/middleware.js",
+    "src/config/cspHeader.js"
+  ],
   "exclude": ["node_modules"]
 }

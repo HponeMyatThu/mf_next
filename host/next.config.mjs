@@ -1,23 +1,9 @@
-import NextFederationPlugin from "@module-federation/nextjs-mf";
+import webpackConfig from "./src/config/webpack.config.mjs";
+import envConfig from "./src/config/envConfig.js";
 
 const nextConfig = {
-  webpack: (config) => {
-    config.plugins.push(
-      new NextFederationPlugin({
-        name: "host",
-        filename: "static/chunks/mainRemoteEntry.js",
-        remotes: {
-          guest:
-            "guest@http://localhost:8001/_next/static/chunks/guestRemoteEntry.js",
-          authUser:
-            "authUser@http://localhost:8002/_next/static/chunks/authUserRemoteEntry.js",
-        },
-        shared: {},
-        extraOptions: {},
-      })
-    );
-    return config;
-  },
+  webpack: webpackConfig,
+  env: envConfig,
 };
 
 export default nextConfig;
