@@ -1,10 +1,10 @@
 import React from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
-import { z } from "zod";
+import { z } from "@/utils/zod_i18n";
 
 const zodSchema = z.object({
-  name: z.string().min(2, { message: "Name must be at least 2 characters" }),
-  email: z.string().email({ message: "Invalid email address" }),
+  name: z.string().min(2),
+  email: z.string().email(),
 });
 
 const validateWithZod =
